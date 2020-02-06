@@ -1,0 +1,188 @@
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  background-image: url("../img/promo.png");
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  font-family: "Arsenal", sans-serif;
+  font-size: 24px;
+}
+
+.background{
+    margin-top: 90px;
+    background-color: rgba(255, 255, 255, 0.30);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 5rem;
+}
+h2 {
+  margin: 30px auto;
+  font-size: 2.5rem;
+  max-width: 850px;
+}
+
+#container {
+  padding: 50px;
+}
+
+input[type="email"] {
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 5px;
+  width: 500px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: #f37441;
+  font-weight: 900;
+  width: 150px;
+  padding: 8px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="email"]:focus {
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(243, 116, 65, 0.8);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(243, 116, 65, 0.8);
+  box-shadow: 0px 0px 15px 5px rgba(243, 116, 65, 0.8);
+}
+
+input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+}
+input[type=checkbox] + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    max-width: 600px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+input[type=checkbox] + label:before {
+    border: 1px solid #bbbbbb;
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 22px;
+    height: 22px;
+    background: #e6e6e6;
+    border-radius: 3px;
+}
+input[type=checkbox]:hover + label:before {
+    background: #ccc;
+}
+input[type=checkbox]:checked + label:before {
+    background: #f37441;
+    border-color: #f37441;
+}
+input[type=checkbox]:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+input[type=checkbox]:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+input[type=checkbox]:checked + label:after {
+    content: '✓';
+    color: #fff;
+    top:-3px;
+    font-size: 20px;
+    font-weight: bold;
+    left: 26px;
+    position: absolute;
+}
+
+.regulations a{
+    text-decoration: underline;
+    color: #000;
+}
+.echo {
+  color: #36b03c;
+  font-weight: 900;
+  text-shadow: 1px 1px #000;
+  margin-top: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    background-image: url("img/promo_mobile.png");
+  }
+
+  #container {
+    padding: 10px;
+  }
+
+  #logo {
+    float: right;
+    margin: 8px;
+    background-color: rgba(255, 255, 255, 0.28);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4);
+  }
+
+  .background{
+      margin-top: 75px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    max-width: 380px;
+  }
+  .regulations{
+    font-size: 0.7rem;
+    line-height: 0.5;
+  }
+  input[type="email"] {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  input[type="submit"] {
+    width: 100px;
+    font-size: 20px;
+  }
+  input[type=checkbox] + label:before {
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+  }
+  input[type=checkbox]:checked + label:after {
+    top: 2px;
+    font-size: 16px;
+    left: 10px;
+  }
+  .cc-message {
+    font-size: 11px;
+    line-height: 12px;
+  }
+}

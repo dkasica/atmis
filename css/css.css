@@ -1,0 +1,34 @@
+#logo
+{
+  padding-top:100px;
+  width: 250px; 
+  height: 275px;
+  margin: auto;
+  text-align: center;
+}
+
+.stretch
+{
+    width: 250px;
+    height: 275px;
+}
+
+#login
+{
+  width: 20%; 
+  margin: auto;
+  text-align: center;
+}
+
+body
+{
+  background-color: white;
+  font-family: Verdana;
+  font-size: 20px;
+}
+
+h2
+{
+  text-align: center;
+  color: grey;
+}

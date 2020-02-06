@@ -1,0 +1,1 @@
+This is students zone and landing page made for www.atmis.pl
